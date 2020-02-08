@@ -1,0 +1,377 @@
+#default.groups.packages
+# now is a meta package
+base
+base-devel
+amd-ucode
+intel-ucode
+# adding old base packages
+mkinitcpio
+mkinitcpio-busybox
+mkinitcpio-nfs-utils
+cryptsetup
+device-mapper
+dhcpcd
+diffutils
+e2fsprogs
+inetutils
+jfsutils
+less
+linux
+logrotate
+man-db
+man-pages
+mdadm
+nano
+perl
+reiserfsprogs
+s-nail
+sysfsutils
+systemd-sysvcompat
+texinfo
+usbutils
+vi
+which
+xfsprogs
+#New gfxboot
+gfxboot
+
+#new featured package 
+# 11/19 -- a curses package manager
+pcurses
+# beautiful terminal system load monitor
+s-tui
+
+# hardware-support.packages
+lsscsi
+sdparm
+sg3_utils
+smartmontools
+
+# EFI/UEFI.packages
+refind-efi
+
+# keyring_mirros.endeavour
+endeavouros-keyring
+endeavouros-mirrorlist
+
+# xorg.endeavour
+xf86-video-vesa
+xorg-server
+xorg-xinit
+xorg-xkill
+xorg-xrandr
+xorg-xinput
+mesa
+xf86-input-libinput
+# synaptics is no longer actively updated.
+# If possible, use libinput.
+#xf86-input-synaptics
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-fbdev
+xf86-video-intel
+xf86-video-nouveau
+#nvidia-installer-dkms
+nvidia
+nvidia-utils
+nvidia-settings
+
+# kernel.endeavour
+# linux (base-group)
+# linux-headers (not anymore in base-group, needs explicit install)
+linux-headers
+dkms
+linux-firmware
+
+# loginmanager.packages
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+# now needed for lightdm in some cases
+accountsservice
+
+#Locale font
+opendesktop-fonts
+
+# default.desktop.endeavouros
+xfce4
+#xfce4-goodies
+# goodies selection 
+mousepad	
+orage	
+parole
+ristretto
+thunar-archive-plugin
+thunar-media-tags-plugin		
+xfce4-battery-plugin	
+#xfce4-clipman-plugin	
+#xfce4-cpufreq-plugin	
+#xfce4-cpugraph-plugin	
+xfce4-datetime-plugin		
+#xfce4-diskperf-plugin		
+#xfce4-fsguard-plugin	
+#xfce4-genmon-plugin	
+xfce4-mount-plugin	
+xfce4-netload-plugin	
+xfce4-notifyd	
+xfce4-pulseaudio-plugin
+xfce4-screensaver
+xfce4-screenshooter
+#xfce4-sensors-plugin
+#xfce4-smartbookmark-plugin	
+#xfce4-systemload-plugin
+xfce4-taskmanager
+#xfce4-time-out-plugin
+#xfce4-timer-plugin	
+#xfce4-verve-plugin
+xfce4-wavelan-plugin	
+xfce4-weather-plugin	
+xfce4-whiskermenu-plugin
+xfce4-xkb-plugin
+screenfetch
+
+# extra.desktop.packages
+leafpad
+epdfview
+dconf-editor
+file-roller
+libwnck3
+network-manager-applet
+transmission-gtk
+#zsh
+#grml-zsh-config
+galculator
+
+# default.bowser.endeavour
+firefox
+#firefox-ublock-origin (may adding to netinstall "security" group)
+ttf-dejavu
+#gnu-free-fonts (unneded)
+ttf-liberation
+ttf-bitstream-vera
+ttf-ubuntu-font-family
+cantarell-fonts
+ttf-croscore
+ttf-carlito
+ttf-caladea
+#terminus-font (bitmap fonts not working with pango)
+noto-fonts
+noto-fonts-cjk
+opendesktop-fonts
+ttf-opensans
+
+# filesystems.packages
+btrfs-progs
+dosfstools
+f2fs-tools
+lvm2
+mtools
+ntfs-3g
+exfat-utils
+nfs-utils
+nilfs-utils
+mlocate
+gvfs
+gvfs-afc
+gvfs-goa
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+
+# installation.packages
+arch-install-scripts
+pacman-contrib
+crda
+dialog
+dmraid
+efibootmgr
+efitools
+fakeroot
+gptfdisk
+grub
+haveged
+hwdetect
+hwinfo
+ntp
+os-prober
+ckbcomp
+
+# system.packages
+expect
+git
+pkgfile
+reflector
+tlp
+unrar
+unzip
+wget
+xdg-user-dirs-gtk
+xz
+gpm
+
+# for ssh
+gnome-keyring
+
+# network.packages
+#b43-firmware
+b43-fwcutter
+broadcom-wl-dkms
+#broadcom-wl
+dnsutils
+# both needed?
+intel-ucode
+amd-ucode
+ipw2100-fw
+ipw2200-fw
+modemmanager
+netctl
+net-tools
+networkmanager
+networkmanager-openvpn
+nss-mdns
+usb_modeswitch
+whois
+wireless_tools
+dhclient
+dnsmasq
+elinks
+ethtool
+openconnect
+openssh
+openvpn
+rp-pppoe
+wireless-regdb
+wpa_supplicant
+wvdial
+gnu-netcat
+iwd
+linux-atm
+ndisc6
+ppp
+pptpclient
+vpnc
+xl2tpd
+
+# calamares.endeavour
+calamares_current
+#calamares_offline
+# calamares.dependencies
+lsb-release
+libpwquality
+cmake
+qt5ct
+qt5-svg
+qt5-webengine
+yaml-cpp
+extra-cmake-modules
+boost
+
+# calamares.modules
+# dependencies for installer modules
+
+# calamares.welcome
+upower
+
+# calamares.partition
+#kde partition manager
+#partitionmanager
+#gnome-icon-theme
+kcoreaddons
+kconfig
+ki18n
+kservice
+kwidgetsaddons
+kpmcore
+parted
+gparted
+
+# calamares.unpackfs
+squashfs-tools
+
+# calamares.others
+qt5-xmlpatterns
+doxygen
+tcpdump
+dmidecode
+kparts
+polkit-qt5
+python
+solid
+qt5-tools
+#pythonqt
+
+# liveiso.rescue-tools
+grsync
+ddrescue
+dd_rescue
+testdisk
+clonezilla
+partclone
+partimage
+gftp
+hdparm
+fsarchiver
+mc
+
+# endeavouros.sound
+alsa-utils
+alsa-plugins
+alsa-firmware
+pulseaudio-alsa
+pulseaudio-bluetooth
+pulseaudio-equalizer
+pulseaudio-jack
+
+# developers.wishes
+htop 
+glances
+gtop
+rsync
+hardinfo
+bash-completion
+downgrade
+
+# needed.dependencies
+pavucontrol
+ffmpegthumbnailer
+poppler-glib
+libgsf 
+libopenraw
+freetype2
+gst-libav
+gst-plugins-bad
+gst-plugins-ugly
+gpart
+
+# AUR-support 
+yay
+
+#virtualbox.packages
+virtualbox-guest-modules-arch
+virtualbox-guest-utils
+
+#screen tearing at ISO
+xcompmgr
+
+# theme.xfce4.endeavouros
+endeavouros-theming
+arc-x-icons-theme
+capitaine-cursors
+arc-gtk-theme
+gtk-engine-murrine
+gnome-themes-extra
+adwaita-icon-theme
+grub2-theme-endeavouros
+
+# endeavouros.launcher
+yad
+gspell
+welcome
+
+# package.notification
+eos-update-notifier
+
+#Vmware support
+open-vm-tools
+xf86-input-vmmouse
+xf86-video-vmware

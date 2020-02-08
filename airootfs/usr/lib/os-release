@@ -1,0 +1,10 @@
+NAME="EndeavourOS"
+PRETTY_NAME="EndeavourOS"
+ID=endeavouros
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="0;36"
+HOME_URL="https://endeavouros.com/"
+SUPPORT_URL="https://forum.endeavouros.com/"
+BUG_REPORT_URL="https://github.com/endeavouros-team"
+LOGO=endeavouros

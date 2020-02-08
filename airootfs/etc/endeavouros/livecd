@@ -1,0 +1,26 @@
+#!/bin/sh
+# LiveCD setup
+
+source /etc/endeavouros/functions
+
+LOCALE=$(get_country)
+KEYMAP=$(get_keyboard)
+KBLAYOUT=$(get_layout)
+
+_set_locales
+#locale-gen > /dev/null
+
+
+# load keys
+loadkeys $(cat /etc/vconsole.conf | grep "KEYMAP=" | cut -d= -f2)
+
+sudo -u liveuser echo ${LOCALE} > /home/liveuser/.config/user-dirs.locale
+
+sudo -u liveuser xdg-user-dirs-update
+
+systemd-detect-virt -v -q && { sudo depmod -a; modprobe -a vboxguest vboxsf vboxvideo; }
+
+set_video_driver
+
+echo "LiveCD Configuration Complete"
+exit 0;
